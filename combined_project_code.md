@@ -1,437 +1,5 @@
 # Complete Project Codebase
-Generated on: Thu Jun 11 10:11:02 UTC 2026
-
-## File: hk_live.m3u
-````m3u
-#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
-# Update: 2026-06-11 04:06:40
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/qClQf
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/qrfbg
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/62WM7
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/n90gt
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/GeWKr
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
-http://php.jdshipin.com/TVOD/iptv.php?id=fct2
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
-http://php.jdshipin.com/TVOD/iptv.php?id=fct3
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://iptv.4666888.xyz/iptv2A.php?id=34
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/TVB翡翠台 1080P.png",TVB翡翠台 1080P
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台4K.png",翡翠台4K
-http://cdn6.163189.xyz/163189/fct4k
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台北美版.png",翡翠台北美版
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=j1
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-https://cdn.163189.xyz/live/fct4k/stream.m3u8$LR•IPV4『线路16』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://8.138.7.223/tv/gdmzyd.php?id=1$LR•IPV4『线路20』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://122.152.202.33/s/81a8a44f/index.m3u8?id=53$LR•IPV4『线路26』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://185.243.7.13:80/play/live.php?mac=00:1A:79:45:5E:9A&stream=941619&extension=ts&play_token=p2yEuU1aFS$LR•IPV4『线路27』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/GeWKr?id=fct406$LR•IPV4『线路30』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://r.jdshipin.com/GeWKr?id=fct720$LR•IPV4『线路31』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
-http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=0401&tk=2aca1ad9a849$LR•IPV4『线路39』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
-http://r.jdshipin.com/CkuBd
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/無線新聞.png",無線新聞
-http://php.jdshipin.com/TVOD/iptv.php?id=wxxw
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://r.jdshipin.com/ZQ4kN
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://r.jdshipin.com/jUx8K
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
-http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
-http://r.jdshipin.com/vSJvl
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
-http://r.jdshipin.com/TcKr2
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
-http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
-https://turkmedya-live.ercdn.net/tv360/tv360.m3u8$LR•IPV4『线路1』
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
-http://php.jdshipin.com/TVOD/iptv.php?id=viutv
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
-http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/HOY TV.png",HOY TV
-http://r.jdshipin.com/sFw4S
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/HOY78.png",HOY78
-http://cdn.163189.xyz/live/hoy/stream.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/HOY TV.png",HOY TV
-http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線新聞.png",有線新聞
-http://61.10.2.141/live_freedirect/freehd209_h.live/playlist.m3u
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線新聞台.png",有線新聞台
-http://cm61-10-2-143.hkcable.com.hk/live_freedirect/freehd209_h.live/playlist.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線新聞.png",有線新聞
-http://iptv.4666888.xyz/iptv2A.php?id=31
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視31 (官方).png",港台電視31 (官方)
-https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK 31.png",RTHK 31
-https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視32 (官方).png",港台電視32 (官方)
-https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK 32.png",RTHK 32
-https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK31.png",RTHK31
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK32.png",RTHK32
-http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NOW NEWS.png",NOW NEWS
-http://cdn.163189.xyz/163189/now
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Anthony Bourdain: Parts Unknown.png",Anthony Bourdain: Parts Unknown
-https://jmp2.uk/plu-69173ce8abd4703b27f71d44.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/HEi Now (1080p).png",HEi Now (1080p)
-https://copacogen.desdeparaguay.net/heitv/heitv_py_alta/playlist.m3u8?admin=nacion
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/MS NOW (720p).png",MS NOW (720p)
-http://41.205.93.154/MSNBC/index.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Now 14 (1080p).png",Now 14 (1080p)
-https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NOW TV (720p).png",NOW TV (720p)
-https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
-#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NowMedia Television (1080p).png",NowMedia Television (1080p)
-https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/tracks-v1/index.fmp4.m3u8
-
-````
-
-## File: main.py
-````py
-import requests
-import re
-import datetime
-from opencc import OpenCC
-
-# 初始化繁簡轉換器
-cc = OpenCC('s2t')
-
-# --- 設定區 ---
-
-# 1. 來源列表
-SOURCE_URLS = [
-    "https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt",
-    "https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82023.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-7.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-11.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202005.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202003.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/1300%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88%E3%80%90%E5%85%A8%E9%83%A84k%E8%80%81%E7%94%B5%E8%84%91%E5%88%AB%E7%94%A8%E3%80%91.m3u8",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/5000%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u",
-    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E6%88%91%E7%9A%84%E6%92%AD%E6%94%BE%E6%BA%90.m3u8",
-    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
-    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
-    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
-    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-    "https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
-    "https://iptv-org.github.io/iptv/index.m3u",
-    "https://iptv-org.github.io/iptv/countries/hk.m3u",
-    "https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8",
-    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
-    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8",
-    "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
-    "https://epg.pw/test_channels_hong_kong.m3u",
-    "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
-    "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u"
-]
-
-# 2. 包含關鍵字 (必須包含這些字才抓取)
-KEYWORDS = [
-    "ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", 
-    "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", 
-]
-
-# 3. 黑名單關鍵字 (包含這些字的一律丟棄)
-BLOCK_KEYWORDS = [
-    # 來自你的日誌分析 (美國/英語台)
-    "FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", 
-    "Reuters", "Mirror", "ET Now", "The Now", "Right Now", "News Now",
-    "Chopper", "Wow", "UHD", "8K", "Career", "Comics", "Movies",
-    "CBTV","Pearl","AccuWeather","Jadeed","Curiosity","Electric",
-    "Warfare","Knowledge","MagellanTV","70s","80s","90s","Rock",
-    "Winnipeg","Edmonton","RightNow","Times","True","Mindanow",
-    "Jade","70's","80's","Romedy","WSOC",
-    
-    # 來自你的日誌分析 (大陸/澳門台)
-    "浙江", "杭州", "西湖", "廣東", "珠江", "大灣區", # 排除 "杭州西湖明珠"
-    "澳門", "Macau", "有線 CH", "互動新聞",           # 排除澳門有線
-    "CCTV", "CGTN", "鳳凰", "凤凰", "華麗", "星河", "延时", "測試", "iHOY", "福建"
-]
-
-# 4. 【已更新】頻道排序優先級 (越上面越靠前)
-ORDER_KEYWORDS = [
-    "翡翠", "無線新聞", "明珠", "J2", "J5", "財經",  # TVB系列
-    "ViuTV", "Viutv", "VIUTV", "ViuTV 6", "ViuTVsix",  # Viu系列 (包含你加入的大小寫變體)
-    "HOY", "奇妙", "有線",                         # HOY/Cable系列
-    "港台電視31", "RTHK 31",                      # RTHK系列
-    "港台電視32", "RTHK 32",
-    "Now新聞", "Now直播"                          # Now系列
-]
-
-# 5. 必備的官方/穩定源
-STATIC_CHANNELS = [
-    {"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"},
-    {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}
-]
-
-# --- 邏輯區 ---
-
-def check_url(url):
-    """檢測鏈接是否有效 (超時 2 秒)"""
-    try:
-        response = requests.get(url, timeout=2, stream=True)
-        return response.status_code == 200
-    except:
-        return False
-
-def get_sort_key(item):
-    """計算頻道的排序權重"""
-    name = item["name"]
-    for index, keyword in enumerate(ORDER_KEYWORDS):
-        if keyword in name:
-            return index
-    return 999
-
-def fetch_and_parse():
-    found_channels = []
-    
-    print("🚀 任務開始！正在抓取網路源...", flush=True)
-    
-    for index, source in enumerate(SOURCE_URLS):
-        print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
-        try:
-            r = requests.get(source, timeout=15)
-            r.encoding = 'utf-8'
-            
-            if r.status_code != 200:
-                print(f"    ⚠️ 無法讀取 (Status: {r.status_code})", flush=True)
-                continue
-            
-            lines = r.text.split('\n')
-            current_name = ""
-            count_added = 0
-            
-            for line in lines:
-                line = line.strip()
-                if not line: continue
-                
-                if line.startswith("#EXTINF"):
-                    match = re.search(r',(.+)$', line)
-                    if match:
-                        raw_name = match.group(1).strip()
-                        # 轉繁體
-                        converted_name = cc.convert(raw_name)
-                        # 修正「臺」為「台」
-                        current_name = converted_name.replace('臺', '台')
-                        
-                elif line.startswith("http") and current_name:
-                    # 1. 黑名單檢查
-                    if any(b.lower() in current_name.lower() for b in BLOCK_KEYWORDS):
-                        current_name = ""
-                        continue
-
-                    # 2. 白名單檢查
-                    if any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS):
-                        # 去重
-                        if not any(c['url'] == line for c in found_channels):
-                            found_channels.append({"name": current_name, "url": line})
-                            count_added += 1
-                    current_name = "" # 重置
-            
-            print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
-            
-        except Exception as e:
-            print(f"    ❌ 抓取錯誤: {e}", flush=True)
-
-    return found_channels
-
-def generate_m3u(channels):
-    total = len(channels)
-    print(f"\n🔍 共找到 {total} 個潛在頻道，開始檢測有效性...", flush=True)
-    
-    final_list = []
-    
-    # 1. 加入靜態源
-    for static in STATIC_CHANNELS:
-        final_list.append(static)
-        
-    # 2. 檢測網路源
-    for i, ch in enumerate(channels):
-        print(f"[{i+1}/{total}] 檢測: {ch['name']} ...", end=" ", flush=True)
-        
-        if check_url(ch['url']):
-            final_list.append(ch)
-            print("🟢 有效", flush=True)
-        else:
-            print("🔴 失效", flush=True)
-
-    # 3. 排序
-    print("\n🔄 正在進行排序...", flush=True)
-    final_list.sort(key=get_sort_key)
-
-    # 4. 寫入文件
-    content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
-    content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
-    
-    for item in final_list:
-        final_name = item["name"].replace('臺', '台')
-        content += f'#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
-        content += f'{item["url"]}\n'
-
-    with open("hk_live.m3u", "w", encoding="utf-8") as f:
-        f.write(content)
-
-    print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
-
-if __name__ == "__main__":
-    candidates = fetch_and_parse()
-    generate_m3u(candidates)
-
-````
-
-## File: requirements.txt
-````txt
-requests
-opencc-python-reimplemented
-
-````
-
-## File: .github/workflows/combine-code.yml
-````yml
-name: Generate All Codebase to MD
-
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'combined_project_code.md' # 避免此檔案自身更新引發無限循環
-  workflow_dispatch: # 支援在 GitHub 網頁上手動觸發執行
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Combine All Files into MD
-        run: |
-          OUT_FILE="combined_project_code.md"
-          echo "# Complete Project Codebase" > "$OUT_FILE"
-          echo "Generated on: $(date)" >> "$OUT_FILE"
-          echo "" >> "$OUT_FILE"
-
-          # 遍歷專案內的所有檔案，排除依賴、Git 歷史、打包產物及二進位檔案
-          find . -type f \
-            -not -path "*/node_modules/*" \
-            -not -path "*/.git/*" \
-            -not -path "*/dist/*" \
-            -not -name "package-lock.json" \
-            -not -name "yarn.lock" \
-            -not -name "pnpm-lock.yaml" \
-            -not -name "$OUT_FILE" \
-            -not -name "*.png" \
-            -not -name "*.jpg" \
-            -not -name "*.jpeg" \
-            -not -name "*.gif" \
-            -not -name "*.ico" \
-            -not -name "*.woff*" \
-            -not -name "*.ttf" | while read -r file; do
-              
-              # 取得相對路徑與副檔名
-              rel_path="${file#./}"
-              ext="${file##*.}"
-              
-              # 如果無副檔名，清除變數避免格式混亂
-              if [ "$ext" = "$rel_path" ]; then
-                ext=""
-              fi
-              
-              # 寫入檔案標題
-              echo "## File: $rel_path" >> "$OUT_FILE"
-              # 使用四個反單引號（````）包裹，防止內部程式碼的三個反單引號造成排版衝突
-              echo "\`\`\`\`$ext" >> "$OUT_FILE"
-              cat "$file" >> "$OUT_FILE"
-              echo "" >> "$OUT_FILE"
-              echo "\`\`\`\`" >> "$OUT_FILE"
-              echo "" >> "$OUT_FILE"
-          done
-
-      - name: Commit and Push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add combined_project_code.md
-          
-          if git diff --staged --quiet; then
-            echo "No changes in codebase."
-          else
-            git commit -m "docs: auto-generate complete codebase [skip ci]"
-            git push origin main
-          fi
-
-````
-
-## File: .github/workflows/main.yml
-````yml
-name: Update IPTV Source
-
-on:
-  schedule:
-    # 每天香港時間 08:00 和 20:00 運行 (UTC 00:00, 12:00)
-    - cron: '0 0,12 * * *'
-  workflow_dispatch: # 允許手動點擊按鈕
-
-permissions:
-  contents: write
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-
-    - name: Install dependencies
-      run: pip install -r requirements.txt
-
-    - name: Run script
-      run: python main.py
-
-    - name: Commit and push
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add hk_live.m3u
-        git commit -m "Auto-update channel list" || echo "No changes to commit"
-        git push
-
-````
+Generated on: Wed Jul  1 06:05:09 UTC 2026
 
 ## File: README.md
 ````md
@@ -540,6 +108,500 @@ Fork 本項目後，GitHub Actions 默認是關閉的。你需要：
 4.  **地區限制**: 部分源可能僅限香港 IP 播放。
 
 **Last Update:** 每天自動更新
+
+````
+
+## File: requirements.txt
+````txt
+requests
+opencc-python-reimplemented
+
+````
+
+## File: hk_live.m3u
+````m3u
+#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"
+# Update: 2026-07-01 04:02:19
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://r.jdshipin.com/qrfbg
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://r.jdshipin.com/62WM7
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://r.jdshipin.com/n90gt
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠.png",翡翠
+http://php.jdshipin.com/TVOD/iptv.php?id=fct2
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct4
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://8.138.7.223/tv/gdmzyd.php?id=1$LR•IPV4『线路20』
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://122.152.202.33/s/81a8a44f/index.m3u8?id=53$LR•IPV4『线路26』
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://185.243.7.13:80/play/live.php?mac=00:1A:79:45:5E:9A&stream=941619&extension=ts&play_token=p2yEuU1aFS$LR•IPV4『线路27』
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/翡翠台.png",翡翠台
+http://kkk.jjjj.jiduo.me/api.php?n=tttt&id=0401&tk=2aca1ad9a849$LR•IPV4『线路39』
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
+http://r.jdshipin.com/ZQ4kN
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
+http://r.jdshipin.com/jUx8K
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/明珠台.png",明珠台
+http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線財經信息台.png",有線財經信息台
+https://epg.pw/stream/0fddc0600d3868b05ad741d46294410aebca0fdc4fada5028dc54e624b7b17ca.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/ViuTV.png",ViuTV
+http://r.jdshipin.com/TcKr2
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
+http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Viutv.png",Viutv
+https://turkmedya-live.ercdn.net/tv360/tv360.m3u8$LR•IPV4『线路1』
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/VIUTV.png",VIUTV
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv2
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/香港有線新聞.png",香港有線新聞
+https://epg.pw/stream/4c65fc12a950810e9f068c55b2abf43cf7937762e9c5d4d44381205743c731bf.ctv
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線新聞.png",有線新聞
+http://61.10.2.141/live_freedirect/freehd209_h.live/playlist.m3u
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/有線新聞台.png",有線新聞台
+http://cm61-10-2-143.hkcable.com.hk/live_freedirect/freehd209_h.live/playlist.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視31 (官方).png",港台電視31 (官方)
+https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK 31.png",RTHK 31
+https://www.rthk.hk/feeds/dtt/rthktv31_https.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/港台電視32 (官方).png",港台電視32 (官方)
+https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/RTHK 32.png",RTHK 32
+https://www.rthk.hk/feeds/dtt/rthktv32_https.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Anthony Bourdain: Parts Unknown.png",Anthony Bourdain: Parts Unknown
+https://jmp2.uk/plu-69173ce8abd4703b27f71d44.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/HEi Now (1080p).png",HEi Now (1080p)
+https://copacogen.desdeparaguay.net/heitv/heitv_py_alta/playlist.m3u8?admin=nacion
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/Now 14 (1080p).png",Now 14 (1080p)
+https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NOW TV (720p).png",NOW TV (720p)
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NowMedia Television (1080p).png",NowMedia Television (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
+#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/NowMedia Television Spanish (1080p).png",NowMedia Television Spanish (1080p)
+https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a16fa020f4c411f09ddaa1978319689a/index.m3u8
+
+````
+
+## File: main.py
+````py
+import requests
+import re
+import datetime
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from opencc import OpenCC
+
+# 初始化繁簡轉換器
+cc = OpenCC('s2t')
+
+# --- 設定區 ---
+
+# 1. 來源列表
+SOURCE_URLS = [
+    "https://raw.githubusercontent.com/Supprise0901/TVBox_live/refs/heads/main/live.txt",
+    "https://raw.githubusercontent.com/Guovin/iptv-api/refs/heads/gd/output/result.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A8202506.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82023.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-7.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%BE%B3%E9%97%A82022-11.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202005.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96202003.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E5%8F%B0%E6%B9%BE%E9%A6%99%E6%B8%AF%E6%B5%B7%E5%A4%96.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/1300%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88%E3%80%90%E5%85%A8%E9%83%A84k%E8%80%81%E7%94%B5%E8%84%91%E5%88%AB%E7%94%A8%E3%80%91.m3u8",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/5000%E4%B8%AA%E7%9B%B4%E6%92%AD%E6%BA%90%E5%85%A8%E9%83%A8%E6%9C%89%E6%95%88.m3u",
+    "https://raw.githubusercontent.com/imDazui/Tvlist-awesome-m3u-m3u8/refs/heads/master/m3u/%E6%88%91%E7%9A%84%E6%92%AD%E6%94%BE%E6%BA%90.m3u8",
+    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
+    "https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+    "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
+    "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
+    "https://raw.githubusercontent.com/yuanzl77/IPTV/main/live.m3u",
+    "https://iptv-org.github.io/iptv/index.m3u",
+    "https://iptv-org.github.io/iptv/countries/hk.m3u",
+    "https://raw.githubusercontent.com/joevess/IPTV/main/home.m3u8",
+    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u",
+    "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u",
+    "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8",
+    "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
+    "https://epg.pw/test_channels_hong_kong.m3u",
+    "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
+    "https://raw.githubusercontent.com/MercuryZz/IPTVN/refs/heads/Files/GAT.m3u"
+]
+
+# 2. 包含關鍵字 (必須包含這些字才抓取)
+KEYWORDS = [
+    "ViuTV", "HOY", "RTHK", "Jade", "Pearl", "J2", "J5", "Now", 
+    "无线", "無線", "有线", "有線", "翡翠", "明珠", "港台", 
+]
+
+# 3. 黑名單關鍵字 (包含這些字的一律丟棄)
+BLOCK_KEYWORDS = [
+    # 來自你的日誌分析 (美國/英語台)
+    "FOX", "Pluto", "Local", "NBC", "CBS", "ABC", "AXS", "Snowy", 
+    "Reuters", "Mirror", "ET Now", "The Now", "Right Now", "News Now",
+    "Chopper", "Wow", "UHD", "8K", "Career", "Comics", "Movies",
+    "CBTV","Pearl","AccuWeather","Jadeed","Curiosity","Electric",
+    "Warfare","Knowledge","MagellanTV","70s","80s","90s","Rock",
+    "Winnipeg","Edmonton","RightNow","Times","True","Mindanow",
+    "Jade","70's","80's","Romedy","WSOC",
+    
+    # 來自你的日誌分析 (大陸/澳門台)
+    "浙江", "杭州", "西湖", "廣東", "珠江", "大灣區", # 排除 "杭州西湖明珠"
+    "澳門", "Macau", "有線 CH", "互動新聞",           # 排除澳門有線
+    "CCTV", "CGTN", "鳳凰", "凤凰", "華麗", "星河", "延时", "測試", "iHOY", "福建"
+]
+
+# 4. 【已更新】頻道排序優先級 (越上面越靠前)
+ORDER_KEYWORDS = [
+    "翡翠", "無線新聞", "明珠", "J2", "J5", "財經",  # TVB系列
+    "ViuTV", "Viutv", "VIUTV", "ViuTV 6", "ViuTVsix",  # Viu系列 (包含你加入的大小寫變體)
+    "HOY", "奇妙", "有線",                         # HOY/Cable系列
+    "港台電視31", "RTHK 31",                      # RTHK系列
+    "港台電視32", "RTHK 32",
+    "Now新聞", "Now直播"                          # Now系列
+]
+
+# 5. 必備的官方/穩定源
+STATIC_CHANNELS = [
+    {"name": "港台電視31 (官方)", "url": "https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-b.m3u8"},
+    {"name": "港台電視32 (官方)", "url": "https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_2052_av-b.m3u8"}
+]
+
+# --- 邏輯區 ---
+
+def check_url(url, retries=2, timeout=5):
+    """檢測鏈接是否有效 - 增強版
+    1. 多次重試處理暫時性錯誤
+    2. 驗證 Content-Type 是否為視頻/串流格式
+    3. 讀取實際數據確認不是錯誤頁面
+    4. 檢查回應體大小是否合理
+    """
+    valid_content_types = [
+        'video/', 'application/x-mpegurl', 'application/vnd.apple.mpegurl',
+        'application/octet-stream', 'binary/octet-stream', 'application/dash+xml'
+    ]
+    
+    for attempt in range(retries + 1):
+        try:
+            response = requests.get(url, timeout=timeout, stream=True)
+            
+            if response.status_code != 200:
+                if attempt < retries:
+                    time.sleep(1)
+                    continue
+                return False
+            
+            # 檢查 Content-Type
+            content_type = response.headers.get('Content-Type', '').lower()
+            is_valid_type = any(ct in content_type for ct in valid_content_types)
+            
+            # 讀取前 10KB 數據驗證
+            data = b''
+            for chunk in response.iter_content(chunk_size=1024):
+                data += chunk
+                if len(data) >= 10240:  # 讀取 10KB
+                    break
+            
+            response.close()
+            
+            # 如果沒有數據，嘗試重試
+            if len(data) == 0:
+                if attempt < retries:
+                    time.sleep(1)
+                    continue
+                return False
+            
+            # 檢查是否為有效串流格式
+            data_str = data[:4096].decode('utf-8', errors='ignore').strip()
+            
+            # 有效 M3U8 格式檢查
+            if data_str.startswith('#EXTM3U') or data_str.startswith('#EXT-X-'):
+                return True
+            
+            # 有效 M3U 格式檢查
+            if data_str.startswith('#EXTINF'):
+                return True
+            
+            # 有效視頻數據檢查 (檢查常見的視頻文件頭)
+            if data[:4] in [b'\x00\x00\x00\x18', b'\x00\x00\x00\x1c', b'\x00\x00\x00\x20',
+                           b'\x1a\x45\xdf\xa3',  # WebM/Matroska
+                           b'\x52\x49\x46\x46',  # RIFF (AVI)
+                           ]:
+                return True
+            
+            # 如果 Content-Type 是視頻相關且有數據
+            if is_valid_type and len(data) > 0:
+                return True
+            
+            # 如果嘗試次數用盡仍無有效數據
+            if attempt < retries:
+                time.sleep(1)
+                continue
+            return False
+            
+        except requests.exceptions.Timeout:
+            if attempt < retries:
+                time.sleep(1)
+                continue
+            return False
+        except requests.exceptions.ConnectionError:
+            if attempt < retries:
+                time.sleep(1)
+                continue
+            return False
+        except Exception:
+            return False
+    
+    return False
+
+
+def check_url_concurrent(channels, max_workers=10):
+    """並行檢測多個頻道的有效性"""
+    results = {}
+    
+    def check_single(ch):
+        return ch['url'], check_url(ch['url'])
+    
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(check_single, ch): ch for ch in channels}
+        
+        for future in as_completed(futures):
+            url, is_valid = future.result()
+            results[url] = is_valid
+    
+    return results
+
+def get_sort_key(item):
+    """計算頻道的排序權重"""
+    name = item["name"]
+    for index, keyword in enumerate(ORDER_KEYWORDS):
+        if keyword in name:
+            return index
+    return 999
+
+def fetch_and_parse():
+    found_channels = []
+    
+    print("🚀 任務開始！正在抓取網路源...", flush=True)
+    
+    for index, source in enumerate(SOURCE_URLS):
+        print(f"  [{index+1}/{len(SOURCE_URLS)}] 正在讀取: {source}", flush=True)
+        try:
+            r = requests.get(source, timeout=15)
+            r.encoding = 'utf-8'
+            
+            if r.status_code != 200:
+                print(f"    ⚠️ 無法讀取 (Status: {r.status_code})", flush=True)
+                continue
+            
+            lines = r.text.split('\n')
+            current_name = ""
+            count_added = 0
+            
+            for line in lines:
+                line = line.strip()
+                if not line: continue
+                
+                if line.startswith("#EXTINF"):
+                    match = re.search(r',(.+)$', line)
+                    if match:
+                        raw_name = match.group(1).strip()
+                        # 轉繁體
+                        converted_name = cc.convert(raw_name)
+                        # 修正「臺」為「台」
+                        current_name = converted_name.replace('臺', '台')
+                        
+                elif line.startswith("http") and current_name:
+                    # 1. 黑名單檢查
+                    if any(b.lower() in current_name.lower() for b in BLOCK_KEYWORDS):
+                        current_name = ""
+                        continue
+
+                    # 2. 白名單檢查
+                    if any(cc.convert(k).replace('臺', '台').lower() in current_name.lower() for k in KEYWORDS):
+                        # 去重
+                        if not any(c['url'] == line for c in found_channels):
+                            found_channels.append({"name": current_name, "url": line})
+                            count_added += 1
+                    current_name = "" # 重置
+            
+            print(f"    ✅ 抓取成功，新增 {count_added} 個頻道", flush=True)
+            
+        except Exception as e:
+            print(f"    ❌ 抓取錯誤: {e}", flush=True)
+
+    return found_channels
+
+def generate_m3u(channels):
+    total = len(channels)
+    print(f"\n🔍 共找到 {total} 個潛在頻道，開始並行檢測有效性...", flush=True)
+    
+    final_list = []
+    
+    # 1. 加入靜態源
+    for static in STATIC_CHANNELS:
+        final_list.append(static)
+        
+    # 2. 並行檢測網路源
+    validity_map = check_url_concurrent(channels, max_workers=10)
+    
+    for ch in channels:
+        if validity_map.get(ch['url'], False):
+            final_list.append(ch)
+            print(f"  🟢 {ch['name']} - 有效", flush=True)
+        else:
+            print(f"  🔴 {ch['name']} - 失效", flush=True)
+
+    # 3. 排序
+    print("\n🔄 正在進行排序...", flush=True)
+    final_list.sort(key=get_sort_key)
+
+    # 4. 寫入文件
+    content = '#EXTM3U x-tvg-url="https://epg.112114.xyz/pp.xml"\n'
+    content += f'# Update: {datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}\n'
+    
+    for item in final_list:
+        final_name = item["name"].replace('臺', '台')
+        content += f'#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/{final_name}.png",{final_name}\n'
+        content += f'{item["url"]}\n'
+
+    with open("hk_live.m3u", "w", encoding="utf-8") as f:
+        f.write(content)
+
+    print(f"\n🎉 全部完成！共收錄 {len(final_list)} 個有效頻道。", flush=True)
+
+if __name__ == "__main__":
+    candidates = fetch_and_parse()
+    generate_m3u(candidates)
+
+````
+
+## File: .github/workflows/main.yml
+````yml
+name: Update IPTV Source
+
+on:
+  schedule:
+    # 每天香港時間 08:00 和 20:00 運行 (UTC 00:00, 12:00)
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: # 允許手動點擊按鈕
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Run script
+      run: python main.py
+
+    - name: Commit and push
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add hk_live.m3u
+        git commit -m "Auto-update channel list" || echo "No changes to commit"
+        git push
+
+````
+
+## File: .github/workflows/combine-code.yml
+````yml
+name: Generate All Codebase to MD
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'combined_project_code.md' # 避免此檔案自身更新引發無限循環
+  workflow_dispatch: # 支援在 GitHub 網頁上手動觸發執行
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Combine All Files into MD
+        run: |
+          OUT_FILE="combined_project_code.md"
+          echo "# Complete Project Codebase" > "$OUT_FILE"
+          echo "Generated on: $(date)" >> "$OUT_FILE"
+          echo "" >> "$OUT_FILE"
+
+          # 遍歷專案內的所有檔案，排除依賴、Git 歷史、打包產物及二進位檔案
+          find . -type f \
+            -not -path "*/node_modules/*" \
+            -not -path "*/.git/*" \
+            -not -path "*/dist/*" \
+            -not -name "package-lock.json" \
+            -not -name "yarn.lock" \
+            -not -name "pnpm-lock.yaml" \
+            -not -name "$OUT_FILE" \
+            -not -name "*.png" \
+            -not -name "*.jpg" \
+            -not -name "*.jpeg" \
+            -not -name "*.gif" \
+            -not -name "*.ico" \
+            -not -name "*.woff*" \
+            -not -name "*.ttf" | while read -r file; do
+              
+              # 取得相對路徑與副檔名
+              rel_path="${file#./}"
+              ext="${file##*.}"
+              
+              # 如果無副檔名，清除變數避免格式混亂
+              if [ "$ext" = "$rel_path" ]; then
+                ext=""
+              fi
+              
+              # 寫入檔案標題
+              echo "## File: $rel_path" >> "$OUT_FILE"
+              # 使用四個反單引號（````）包裹，防止內部程式碼的三個反單引號造成排版衝突
+              echo "\`\`\`\`$ext" >> "$OUT_FILE"
+              cat "$file" >> "$OUT_FILE"
+              echo "" >> "$OUT_FILE"
+              echo "\`\`\`\`" >> "$OUT_FILE"
+              echo "" >> "$OUT_FILE"
+          done
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add combined_project_code.md
+          
+          if git diff --staged --quiet; then
+            echo "No changes in codebase."
+          else
+            git commit -m "docs: auto-generate complete codebase [skip ci]"
+            git push origin main
+          fi
 
 ````
 
