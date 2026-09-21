@@ -35,6 +35,7 @@ FALLBACK_STANDARD_SOURCES = [
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv6/result.m3u",
     "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
     "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u",
+    "https://live.hacks.tools/tv/ipv4/categories/hong_kong.m3u",
     # 純 IPv4 / IPv6
     "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u",
     "https://raw.githubusercontent.com/vamoschuck/TV/main/M3U",
