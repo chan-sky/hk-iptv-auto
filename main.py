@@ -11,7 +11,7 @@ import m3u8
 
 cc = OpenCC('s2t')
 
-# 模擬標準 Android IPTV 專用播放器標頭 (穿透多數防盜鏈)
+# 模擬標準 Android IPTV 專用播放器標頭
 IPTV_UA = 'okhttp/3.15.0 (Linux; Android 11; TVBox)'
 HEADERS = {
     'User-Agent': IPTV_UA,
@@ -19,10 +19,15 @@ HEADERS = {
     'Connection': 'keep-alive'
 }
 
-# --- 1. 上游與備用來源 ---
-YOUHUNWL_README_URL = "https://raw.githubusercontent.com/youhunwl/TVAPP/main/README.md"
+# --- 1. 動態上游同步設定 (自動從這兩個知名大倉庫抓取最新源) ---
+UPSTREAM_README_URLS = [
+    "https://raw.githubusercontent.com/youhunwl/TVAPP/main/README.md",
+    "https://raw.githubusercontent.com/ngo5/IPTV/main/README.md"
+]
 
+# --- 2. 備用與手動指定的直連直播源 ---
 FALLBACK_STANDARD_SOURCES = [
+    # 你的最新指定清單
     "https://raw.githubusercontent.com/s14685/tv/main/iptvhk.txt",
     "https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/hk.m3u",
     "https://raw.githubusercontent.com/hujingguang/ChinaIPTV/main/HongKong.m3u8",
@@ -31,7 +36,19 @@ FALLBACK_STANDARD_SOURCES = [
     "https://raw.githubusercontent.com/YueChan/Live/main/IPTV.m3u",
     "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/result.m3u",
     "https://epg.pw/test_channels_hong_kong.m3u",
-    "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8"
+    "https://raw.githubusercontent.com/Free-TV/IPTV/refs/heads/master/playlists/playlist_hong_kong.m3u8",
+    "https://raw.githubusercontent.com/Free-TV/IPTV/master/playlist.m3u8",
+    "https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.m3u",
+    "https://raw.githubusercontent.com/zilong7728/Collect-IPTV/main/best_sorted.m3u",
+    
+    # 常用穩定備份源
+    "https://live.zbds.top/tv/iptv4.txt",
+    "https://live.zbds.top/tv/iptv4.m3u",
+    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
+    "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv6.m3u",
+    "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u",
+    "https://raw.githubusercontent.com/BigBigGrandG/IPTV-URL/release/Gather.m3u",
+    "https://raw.githubusercontent.com/YanG-1989/m3u/main/Gather.m3u"
 ]
 
 FALLBACK_TVBOX_CONFIGS = [
@@ -43,7 +60,7 @@ FALLBACK_TVBOX_CONFIGS = [
     "http://xhztv.top/xhz"
 ]
 
-# --- 2. 嚴格過濾與排序規則 ---
+# --- 3. 嚴格過濾與排序規則 ---
 KEYWORDS = [
     "ViuTV", "Viutv", "VIUTV", "ViuTV 6", "ViuTVsix",
     "HOY", "奇妙電視",
@@ -73,43 +90,53 @@ ORDER_KEYWORDS = [
     "Now新聞", "Now直播"
 ]
 
-# 經最新驗證的香港官方可用地址
+# 最新可用香港官方源
 OFFICIAL_CHANNELS = [
     {"name": "港台電視31", "url": "https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8"},
     {"name": "港台電視32", "url": "https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8"}
 ]
 
-# --- 3. 核心工具模組 ---
+# --- 4. 輔助函數 ---
 
-def encode_punycode_url(url):
+def normalize_github_raw(url: str) -> str:
+    """自動修復 GitHub Blob 網頁為 Raw 直鏈"""
+    if "github.com/" in url and "/blob/" in url:
+        url = url.replace("github.com/", "raw.githubusercontent.com/").replace("/blob/", "/")
+    return url
+
+def encode_punycode_url(url: str) -> str:
+    """將中文域名安全轉碼為 Punycode"""
     try:
+        url = normalize_github_raw(url)
         parts = urlparse(url)
         netloc = parts.netloc.encode('idna').decode('ascii')
         return urlunparse((parts.scheme, netloc, parts.path, parts.params, parts.query, parts.fragment))
     except Exception:
         return url
 
-def sync_from_youhunwl_tvapp():
-    print("🌐 正在向 youhunwl/TVAPP 同步最新資源清單...", flush=True)
-    live_sources = set(FALLBACK_STANDARD_SOURCES)
+def sync_from_upstream_aggregators():
+    """動態向 youhunwl/TVAPP 及 ngo5/IPTV 同步最新清單"""
+    print("🌐 正在向上游大倉庫 (youhunwl / ngo5) 請求最新資源清單...", flush=True)
+    live_sources = set([normalize_github_raw(u) for u in FALLBACK_STANDARD_SOURCES])
     tvbox_configs = set(FALLBACK_TVBOX_CONFIGS)
 
-    try:
-        r = requests.get(YOUHUNWL_README_URL, headers=HEADERS, timeout=10)
-        if r.status_code == 200:
-            content = r.text
-            extracted_links = re.findall(r'https?://[^\s#<>"\']+', content)
-            for link in extracted_links:
-                link = link.strip()
-                if any(ext in link.lower() for ext in ['.apk', '.exe', '.zip', 'github.com/youhunwl', 'shields.io', '.jpg']):
-                    continue
-                if any(link.lower().endswith(ext) for ext in ['.m3u', '.m3u8', '.txt']) or '/m3u/' in link:
-                    live_sources.add(link)
-                else:
-                    tvbox_configs.add(link)
-            print("  ✅ 同步成功！", flush=True)
-    except Exception:
-        print("  ⚠️ 同步失敗，使用本地備用源", flush=True)
+    for upstream_url in UPSTREAM_README_URLS:
+        try:
+            r = requests.get(upstream_url, headers=HEADERS, timeout=10)
+            if r.status_code == 200:
+                content = r.text
+                extracted_links = re.findall(r'https?://[^\s#<>"\']+', content)
+                for link in extracted_links:
+                    link = normalize_github_raw(link.strip())
+                    if any(ext in link.lower() for ext in ['.apk', '.exe', '.zip', 'shields.io', '.jpg', '.png']):
+                        continue
+                    if any(link.lower().endswith(ext) for ext in ['.m3u', '.m3u8', '.txt']) or '/m3u/' in link:
+                        live_sources.add(link)
+                    else:
+                        tvbox_configs.add(link)
+                print(f"  ✅ 成功同步: {upstream_url}", flush=True)
+        except Exception as e:
+            print(f"  ⚠️ 同步 {upstream_url} 異常，保持現有備份", flush=True)
 
     return list(live_sources), list(tvbox_configs)
 
@@ -145,7 +172,7 @@ def extract_tvbox_lives(target_url, visited=None):
                     if isinstance(item, dict):
                         l_url = item.get('url')
                         if l_url and isinstance(l_url, str) and l_url.startswith('http'):
-                            live_urls.append(l_url)
+                            live_urls.append(normalize_github_raw(l_url))
             if 'urls' in data and isinstance(data['urls'], list):
                 for sub_item in data['urls']:
                     if isinstance(sub_item, dict) and 'url' in sub_item:
@@ -157,51 +184,40 @@ def extract_tvbox_lives(target_url, visited=None):
 
     return list(set(live_urls))
 
-# --- 4. 硬核流體驗證 (ffprobe 真機解碼級探測) ---
+# --- 5. ffprobe 真機解碼級驗證 ---
 
 def check_stream_with_ffprobe(url, timeout=5):
-    """
-    使用系統自帶的 ffprobe 工具真正探測流媒體格式。
-    只有能成功讀取到視頻編解碼格式 (codec_name) 的流，才被判定為有效！
-    """
     cmd = [
         'ffprobe',
         '-v', 'error',
         '-user_agent', IPTV_UA,
         '-show_entries', 'stream=codec_type,codec_name',
         '-of', 'json',
-        '-timeout', str(timeout * 1000000),  # 微秒
+        '-timeout', str(timeout * 1000000),
         url
     ]
     try:
         result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=timeout + 2)
         if result.returncode != 0:
             return False
-        
         info = json.loads(result.stdout.decode('utf-8'))
         streams = info.get('streams', [])
-        # 必須確認含有至少一個 'video' 視頻軌
-        has_video = any(s.get('codec_type') == 'video' for s in streams)
-        return has_video
+        return any(s.get('codec_type') == 'video' for s in streams)
     except Exception:
         return False
 
 def fast_pre_filter(url, timeout=3):
-    """第一級輕量過濾：排除連不上、HTTP 非 200 或含有錯誤代碼的 URL"""
     try:
         r = requests.get(url, headers=HEADERS, timeout=timeout, stream=True)
         if r.status_code != 200:
             return False
-        
         header_bytes = b''
         for chunk in r.iter_content(chunk_size=1024):
             header_bytes += chunk
             if len(header_bytes) >= 4096:
                 break
         r.close()
-
         text = header_bytes.decode('utf-8', errors='ignore')
-        # 排除明確寫著錯誤的網頁
         if any(err in text.lower() for err in ['error', 'expired', 'denied', 'unauthorized', '404 not found', '<html>']):
             return False
         return True
@@ -210,23 +226,16 @@ def fast_pre_filter(url, timeout=3):
 
 def verify_single_channel(ch):
     url = ch['url']
-    
-    # 官方 CDN 源在海外 Runner 可能會被 Geo-block，但在香港本地確實可用，予以保留
     if any(domain in url for domain in ['rthk.hk', 'akamaized.net']):
         return ch, True
-    
-    # 第一級：HTTP 快速初篩
     if not fast_pre_filter(url):
         return ch, False
-        
-    # 第二級：ffprobe 真機解碼探測
     is_playable = check_stream_with_ffprobe(url, timeout=5)
     return ch, is_playable
 
 def check_channels_parallel(channels, max_workers=10):
     valid_channels = []
     print(f"🔍 開始對 {len(channels)} 個候選源進行【ffprobe 真機解碼級驗證】...", flush=True)
-    
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         futures = [executor.submit(verify_single_channel, ch) for ch in channels]
         for f in as_completed(futures):
@@ -236,7 +245,6 @@ def check_channels_parallel(channels, max_workers=10):
                 print(f"  🟢 [可播放]: {ch['name']}", flush=True)
             else:
                 print(f"  🔴 [不可播/假源]: {ch['name']}", flush=True)
-                
     return valid_channels
 
 def get_sort_key(item):
@@ -246,19 +254,19 @@ def get_sort_key(item):
             return index
     return 999
 
-# --- 5. 主流程 ---
+# --- 6. 主流程 ---
 
 def fetch_and_parse():
     found_channels = []
     seen_urls = set()
 
-    dynamic_sources, dynamic_configs = sync_from_youhunwl_tvapp()
+    dynamic_sources, dynamic_configs = sync_from_upstream_aggregators()
     for conf in dynamic_configs:
         extracted = extract_tvbox_lives(conf)
         if extracted:
             dynamic_sources.extend(extracted)
 
-    dynamic_sources = list(set(dynamic_sources))
+    dynamic_sources = list(set([normalize_github_raw(s) for s in dynamic_sources]))
     print(f"🚀 清單彙整完畢，共獲取 {len(dynamic_sources)} 個列表，開始檢索香港電視頻道...", flush=True)
 
     for index, source in enumerate(dynamic_sources):
@@ -316,10 +324,8 @@ def fetch_and_parse():
     return found_channels
 
 def generate_m3u(channels):
-    # 執行 ffprobe 真機解碼檢測
     tested_channels = check_channels_parallel(channels)
 
-    # 合併官方源
     final_dict = {}
     for off in OFFICIAL_CHANNELS:
         final_dict[off['url']] = off
@@ -336,7 +342,6 @@ def generate_m3u(channels):
 
     for item in final_list:
         name = item["name"].replace('臺', '台')
-        # 標註 IPTV 專用 UA，確保電視盒子播放時帶上正確請求頭
         content += f'#EXTINF:-1 group-title="Hong Kong" logo="https://epg.112114.xyz/logo/{name}.png",{name}\n'
         content += f'#EXTVLCOPT:http-user-agent={IPTV_UA}\n'
         content += f'{item["url"]}\n'
